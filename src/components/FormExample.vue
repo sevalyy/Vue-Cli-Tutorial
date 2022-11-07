@@ -13,6 +13,10 @@
       <option>Data Scientist</option>
     </select>
     <p>Selected Position: {{ position }}</p>
+    <label>I accept term and conditions! </label>
+    <input type="checkbox" v-model="agreement" />
+
+    <p>{{ agreement ? "Accepted" : "not Accepted" }}</p>
   </div>
 </template>
 
@@ -22,6 +26,7 @@ export default {
     return {
       email: "",
       position: "",
+      agreement: false,
     };
   },
 };

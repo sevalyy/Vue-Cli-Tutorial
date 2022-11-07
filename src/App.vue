@@ -1,5 +1,5 @@
 <template>
-  <HeaderComp />
+  <HeaderComp :currentUser="currentUser" />
   <img alt="Vue logo" src="./assets/logo.png" />
 
   <HelloWorld msg="Welcome to the Vue World" />
@@ -20,7 +20,11 @@ export default {
     HelloWorld,
     HeaderComp,
   },
-
+  data() {
+    return {
+      currentUser: "Welcome Seval",
+    };
+  },
   methods: {
     handleClick() {
       console.log(this.$refs.name.value, "name's value");

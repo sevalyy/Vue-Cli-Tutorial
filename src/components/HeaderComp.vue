@@ -1,12 +1,19 @@
 <template>
   <div class="main">
+    <a>{{ currentUser }}</a>
+
     <a>Homepage</a>
     <a>About</a>
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  props: ["currentUser"],
+  data() {
+    return {};
+  },
+};
 </script>
 
 <style scoped>

@@ -1,17 +1,29 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <img alt="Vue logo" src="./assets/logo.png" />
+
+  <HelloWorld msg="Welcome to the Vue World" />
+  <h3>Using Ref in Vue</h3>
+  <input type="text" ref="name" />
+  <input type="text" ref="password" />
+  <button @click="handleClick">Click</button>
+  <br />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import HelloWorld from "./components/HelloWorld.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    HelloWorld,
+  },
+
+  methods: {
+    handleClick() {
+      console.log(this.$refs.name.value, "name's value");
+    },
+  },
+};
 </script>
 
 <style>

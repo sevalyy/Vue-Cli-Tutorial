@@ -8,17 +8,23 @@
   <input type="text" ref="password" />
   <button @click="handleClick">Click</button>
   <br />
+  <hr />
+  <br />
+
+  <FormExample />
 </template>
 
 <script>
 import HelloWorld from "./components/HelloWorld.vue";
 import HeaderComp from "./components/HeaderComp.vue";
+import FormExample from "./components/FormExample.vue";
 
 export default {
   name: "App",
   components: {
     HelloWorld,
     HeaderComp,
+    FormExample,
   },
   data() {
     return {

@@ -1,43 +1,6 @@
 <template>
-  <HeaderComp :currentUser="currentUser" />
-  <img alt="Vue logo" src="./assets/logo.png" />
-
-  <HelloWorld msg="Welcome to the Vue World" />
-  <h3>Using Ref in Vue</h3>
-  <input type="text" ref="name" />
-  <input type="text" ref="password" />
-  <button @click="handleClick">Click</button>
-  <br />
-  <hr />
-  <br />
-
-  <FormExample />
+  <router-view />
 </template>
-
-<script>
-import HelloWorld from "./components/HelloWorld.vue";
-import HeaderComp from "./components/HeaderComp.vue";
-import FormExample from "./components/FormExample.vue";
-
-export default {
-  name: "App",
-  components: {
-    HelloWorld,
-    HeaderComp,
-    FormExample,
-  },
-  data() {
-    return {
-      currentUser: "Welcome Seval",
-    };
-  },
-  methods: {
-    handleClick() {
-      console.log(this.$refs.name.value, "name's value");
-    },
-  },
-};
-</script>
 
 <style>
 #app {
@@ -46,5 +9,18 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+}
+
+nav {
+  padding: 30px;
+}
+
+nav a {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+nav a.router-link-exact-active {
+  color: #42b983;
 }
 </style>

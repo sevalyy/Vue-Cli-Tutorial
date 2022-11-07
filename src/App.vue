@@ -1,4 +1,5 @@
 <template>
+  <HeaderComp />
   <img alt="Vue logo" src="./assets/logo.png" />
 
   <HelloWorld msg="Welcome to the Vue World" />
@@ -11,11 +12,13 @@
 
 <script>
 import HelloWorld from "./components/HelloWorld.vue";
+import HeaderComp from "./components/HeaderComp.vue";
 
 export default {
   name: "App",
   components: {
     HelloWorld,
+    HeaderComp,
   },
 
   methods: {
@@ -33,6 +36,5 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>

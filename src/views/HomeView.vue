@@ -1,5 +1,4 @@
 <template>
-  <HeaderComp :currentUser="currentUser" />
   <img alt="Vue logo" src="../assets/logo.png" />
 
   <HelloWorld msg="Welcome to the Vue World" />
@@ -16,13 +15,11 @@
 
 <script>
 import HelloWorld from "../components/HelloWorld.vue";
-import HeaderComp from "../components/HeaderComp.vue";
 import FormExample from "../components/FormExample.vue";
 export default {
   name: "App",
   components: {
     HelloWorld,
-    HeaderComp,
     FormExample,
   },
   data() {

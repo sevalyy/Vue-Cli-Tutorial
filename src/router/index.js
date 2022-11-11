@@ -27,6 +27,7 @@ const routes = [
     path: "/countries/:id",
     name: "countryDetails",
     component: CountryDetails,
+    props: true,
   },
 ];
 

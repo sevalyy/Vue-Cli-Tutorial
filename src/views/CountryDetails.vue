@@ -1,12 +1,14 @@
 <template>
   <h1>Country Details</h1>
   <p>
-    {{ $route.params.id }}
+    {{ id }}
   </p>
 </template>
 
 <script>
-export default {};
+export default {
+  props: ["id"],
+};
 </script>
 
 <style></style>

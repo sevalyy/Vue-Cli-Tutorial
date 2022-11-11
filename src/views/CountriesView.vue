@@ -1,7 +1,9 @@
 <template>
   <h1>Countries</h1>
   <div v-for="country in countries" :key="country.id">
-    <p>{{ country.country }} - {{ country.continent }}</p>
+    <router-link :to="{ name: 'countryDetails', params: { id: country.id } }">
+      <p>{{ country.country }} - {{ country.continent }}</p>
+    </router-link>
   </div>
 </template>
 

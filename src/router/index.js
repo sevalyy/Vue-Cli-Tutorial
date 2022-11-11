@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
 import CountriesView from "../views/CountriesView";
 import CountryDetails from "../views/CountryDetails";
+import NotFound from "../views/NotFound";
 
 const routes = [
   {
@@ -28,6 +29,20 @@ const routes = [
     name: "countryDetails",
     component: CountryDetails,
     props: true,
+  },
+  {
+    path: "/countries",
+    name: "countries",
+    component: CountriesView,
+  },
+  {
+    path: "/country",
+    redirect: "/countries",
+  },
+  {
+    path: "/:catchAll(.*)",
+    name: "NotFound",
+    component: NotFound,
   },
 ];
 

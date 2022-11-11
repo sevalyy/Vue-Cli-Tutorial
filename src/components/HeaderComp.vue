@@ -3,8 +3,9 @@
     <a>{{ currentUser }}</a>
 
     <!-- you can write just path or use name of the route -->
-    <router-link :to="{ name: 'Home' }">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <router-link :to="{ name: 'home' }">Home</router-link> |
+    <router-link to="/about">About</router-link> |
+    <router-link to="/countries">Countries</router-link>
   </div>
 </template>
 

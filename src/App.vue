@@ -1,11 +1,13 @@
 i
 <template>
   <nav><HeaderComp :currentUser="currentUser" /></nav>
+  <!-- router-view will display the component that corresponds to the url. You can put it anywhere to adapt it to your layout. -->
   <router-view />
 </template>
 
 <script>
 import HeaderComp from "./components/HeaderComp.vue";
+
 export default {
   components: {
     HeaderComp,

@@ -2,7 +2,8 @@
   <div class="main">
     <a>{{ currentUser }}</a>
 
-    <router-link to="/">Home</router-link> |
+    <!-- you can write just path or use name of the route -->
+    <router-link :to="{ name: 'Home' }">Home</router-link> |
     <router-link to="/about">About</router-link>
   </div>
 </template>

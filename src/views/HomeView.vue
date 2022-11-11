@@ -16,6 +16,7 @@
 <script>
 import HelloWorld from "../components/HelloWorld.vue";
 import FormExample from "../components/FormExample.vue";
+
 export default {
   name: "App",
   components: {
